@@ -1,0 +1,49 @@
+-- phpMyAdmin SQL Dump
+-- version 3.4.5
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 18, 2017 at 05:33 AM
+-- Server version: 5.5.16
+-- PHP Version: 5.3.8
+
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `fileupload`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `files`
+--
+
+CREATE TABLE IF NOT EXISTS `files` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `imagename` varchar(250) NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `files`
+--
+
+INSERT INTO `files` (`id`, `imagename`, `date`) VALUES
+(6, 'redford-banner-image1.png', '2017-02-18 04:57:52'),
+(7, 'build-audience-checkmark-image.png', '2017-02-18 09:40:11'),
+(8, 'redford-powerful-service-image4.png', '2017-02-18 09:50:31'),
+(10, 'redford-logo-image.png', '2017-02-18 09:53:41');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
